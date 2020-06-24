@@ -1,11 +1,11 @@
 # alpine-nginx-php
-Container based on Alpine with nginx and php-fpm and all required libs to use with Symfony 5
+Container based on Alpine with nginx and php-fpm and all required libs to use Symfony 5
 
 ## Extending image
 
 ### Installing composer
 ```
-FROM mephir/alpine-nginx-php:latest
+FROM mephir/alpine-nginx-php:7.3
 
 # Install composer
 RUN curl -sS -f https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
@@ -13,7 +13,7 @@ RUN curl -sS -f https://getcomposer.org/installer | php -- --install-dir=/usr/lo
 
 ### Installing symfony cli
 ```
-FROM mephir/alpine-nginx-php:latest
+FROM mephir/alpine-nginx-php:7.3
 
 # Installation of symfony cli
 RUN curl -s https://get.symfony.com/cli/installer | bash && \
