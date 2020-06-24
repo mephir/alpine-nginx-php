@@ -1,5 +1,5 @@
 # alpine-nginx-php
-Container based on Alpine with nginx and php-fpm and all required libs to use with Symfony 5
+Container based on Alpine with nginx and php-fpm and all required libs to use Symfony 5
 
 ## Extending image
 
